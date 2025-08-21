@@ -13,14 +13,11 @@ function App() {
       className={`App ${theme} min-h-screen transition-all duration-300 ease-in-out`}
       data-testid="app"
     >
-      <header className="flex justify-between items-center p-4">
+      <header className="flex justify-between items-center p-6">
         <h1 className="text-3xl text-shadow-amber-50 font-medium">
           POKEMON APP TASK
         </h1>
-        <Button
-          className="cursor-pointer"
-          onClick={() => dispatch(toggleTheme())}
-        >
+        <Button className="mr-4" onClick={() => dispatch(toggleTheme())}>
           {theme === "light" ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"

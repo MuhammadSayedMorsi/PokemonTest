@@ -39,7 +39,7 @@ const PokemonModal: React.FC = () => {
   }
 
   return (
-    <Dialog open={isModalOpen} onOpenChange={handleClose} onClick={handleClose}>
+    <Dialog open={isModalOpen} onOpenChange={handleClose}>
       <DialogContent className={` max-w-3xl max-h-[90vh] overflow-y-auto`}>
         <DialogHeader className="relative">
           <DialogTitle className="text-2xl font-bold">
